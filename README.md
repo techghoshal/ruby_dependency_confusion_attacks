@@ -6,3 +6,19 @@
   
   
 ## How to Finds & How to Exploit
+    
+Finds Gemfile then check the all require here is public or not
+    
+`https://rubygems.org/gems/`
+
+#### Download all target github repository
+ 
+ - Crate personal access tokens (classic) - https://github.com/settings/tokens 
+ - Install ghorg - https://github.com/gabrie30/ghorg#installation
+    
+    
+    
+    
+    
+    
+    
