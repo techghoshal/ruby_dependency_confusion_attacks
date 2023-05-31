@@ -80,15 +80,22 @@ $ nano <package_name>.gem
  ```bash
  $ gem build <package_name>.gemspec
  ```
-- Upload file publicly (https://pypi.org)
+- Upload file publicly (https://rubygems.org/)
 
-- Create Accont on https://rubygems.org/
+- Create Accont on rubygems.org
     
  ```bash
  $ gem push <package_name>-9.9.9.gem 
  ```
-  
- 
+- Enter your Email: <email>
+- Enter your username: <username>
+- Enter your password: <password>
+    
+---
+    
+Upload IS DONE 😎 
+<br>
+🎉 Now Bounty Time 💰💰
  
     
     
