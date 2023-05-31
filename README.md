@@ -21,11 +21,19 @@ $ ghorg clone <target> -t <token>
 ```
 `example: $ ghorg clone microsoft -t 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`
     
-- After Download all repository finds vulnerable python package 
+- After Download all repository finds vulnerable ruby package 
     
 ```bash
 $ find . -type f -name Gemfile | xargs -n1 -I{} cat {} | awk '/gem / {print}' | grep gem | cut -d "'" -f2 | sort -u | tr -d "'" | tr -d "," |  xargs -n1 -I{} echo "https://rubygems.org/gems/{}" |  httpx -status-code -silent -content-length -mc 404
 ```
+- 404 code means this package not available publicly, so this the vulnerable to dependencies confusion.
+- Then must be must be cross checking using github dorking - `org:intel package_name`
+    
+- So now Publish this ruby packages publicly (https://rubygems.org)
+
+
+    
+    
  
     
     
