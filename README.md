@@ -98,6 +98,6 @@ $ nano <package_name>.gem
 - 🎉 Now Bounty Time 💰💰
  
 ## Connect me
-If you have any queries & how can more improve this repository, you can always contact me on  <a href="https://twitter.com/techghoshal">twitter(@techghoshal)</a>
+If you have any queries, you can always contact me on  <a href="https://twitter.com/techghoshal">twitter(@techghoshal)</a>
     
     
