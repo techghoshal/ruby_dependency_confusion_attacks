@@ -46,18 +46,18 @@ $ nano <package_name>.gem
 - Replaced -
     ```bash
     Gem::Specification.new do |s|
-  s.name        = "<package_name>"
-  s.version     = "9.9.9"
-  s.summary     = "Vulnerability Disclosure: Dependency confiuse vulnerability"
-  s.description = "This Ruby package vulnerable to dependency confiuse vulnerability"
-  s.authors     = ["Anindya Ghoshal"]
-  s.email       = "techghoshal@gmail.com"
-  s.files       = ["lib/mygem.rb"]
-  s.homepage    =
-    "https://rubygems.org/gems/<package_name>"
-  s.license       = "MIT"
-end
-```
+      s.name        = "<package_name>"
+      s.version     = "9.9.9"
+      s.summary     = "Vulnerability Disclosure: Dependency confiuse vulnerability"
+      s.description = "This Ruby package vulnerable to dependency confiuse vulnerability"
+      s.authors     = ["<Anindya Ghoshal>"]
+      s.email       = "<techghoshal@gmail.com>"
+      s.files       = ["lib/<package_name>.rb"]
+      s.homepage    =
+        "https://rubygems.org/gems/<package_name>"
+      s.license       = "MIT"
+   end
+   ```
     
     
  
