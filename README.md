@@ -97,10 +97,7 @@ $ nano <package_name>.gem
 - Must be checking - https://rubygems.org/gems/package_name
 - 🎉 Now Bounty Time 💰💰
  
-    
-    
-    
-    
-    
+## Connect me
+If you have any queries & how to more improve this repository, you can always contact me on  <a href="https://twitter.com/techghoshal">twitter(@techghoshal)</a>
     
     
