@@ -16,6 +16,13 @@ Finds Gemfile then check the all require here is public or not
  - Crate personal access tokens (classic) - https://github.com/settings/tokens 
  - Install ghorg - https://github.com/gabrie30/ghorg#installation
     
+ ```bash
+$ ghorg clone <target> -t <token>
+```
+`example: $ ghorg clone microsoft -t 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`
+    
+ 
+    
     
     
     
