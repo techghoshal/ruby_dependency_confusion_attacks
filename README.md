@@ -87,15 +87,15 @@ $ nano <package_name>.gem
  ```bash
  $ gem push <package_name>-9.9.9.gem 
  ```
-- Enter your Email: <email>
-- Enter your username: <username>
-- Enter your password: <password>
+- Enter your Email: `<email>`
+- Enter your username: `<username>`
+- Enter your password: `<password>`
     
 ---
     
-Upload IS DONE 😎 
-<br>
-🎉 Now Bounty Time 💰💰
+<b>Upload IS DONE</b> 😎 
+- Must be checking - https://rubygems.org/gems/package_name
+- 🎉 Now Bounty Time 💰💰
  
     
     
