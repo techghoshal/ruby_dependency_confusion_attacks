@@ -44,6 +44,7 @@ $ cd <package_name>
 $ nano <package_name>.gem
 ```
 - Replaced -
+    
     ```bash
     Gem::Specification.new do |s|
       s.name        = "<package_name>"
@@ -58,7 +59,7 @@ $ nano <package_name>.gem
       s.license       = "MIT"
    end
    ```
-    
+ - Save this file
     
  
     
