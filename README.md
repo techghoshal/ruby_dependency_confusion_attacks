@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://www.youtube.com/@techghoshal"><img src="https://github.com/techghoshal/ruby_dependency_confusion_attacks/assets/85815644/53657150-65c2-4302-a929-fd08432e842f"></a>
+    <a href="https://www.youtube.com/@techghoshal"><img src="https://github.com/techghoshal/ruby_dependency_confusion_attacks/assets/85815644/be00b3c1-adfb-4027-a23e-910562684b81"></a>
 <h1 align="center">Ruby Dependency Confusion Attacks POC
 <p align="center"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/techghoshal?style=social"></p>
 </h1>
