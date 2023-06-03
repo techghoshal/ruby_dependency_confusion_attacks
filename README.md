@@ -23,9 +23,8 @@ $ ghorg clone <target> -t <token>
     
 - After Download all repository finds vulnerable ruby package 
     
-<a><img title="not working" src="https://img.shields.io/badge/-temporarily%20not%20working-red"></a> 
 ```bash
-$ find . -type f -name Gemfile | xargs -n1 -I{} cat {} | awk '/gem / {print}' | grep gem | cut -d "'" -f2 | sort -u | tr -d "'" | tr -d "," |  xargs -n1 -I{} echo "https://rubygems.org/gems/{}" |  httpx -status-code -silent -content-length -mc 404
+$ find . -type f -name Gemfile | xargs -n1 -I{} cat {} | awk '/gem / {print}' | awk '{print $2;}' | tr -d '"' | tr -d ",'" | sort -u | xargs -n1 -I{} echo "https://rubygems.org/gems/{}" | httpx -status-code -silent -content-length -mc 404
 ```
 - 404 code means this package not available publicly, so this the vulnerable to dependencies confusion attack.
     
