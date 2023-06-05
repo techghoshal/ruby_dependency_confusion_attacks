@@ -73,7 +73,6 @@ $ nano <package_name>.gem
         require 'net/http'
         require 'socket'
 
-
         #System IP
         sysip = UDPSocket.open {|s| s.connect("64.233.187.99", 1); s.addr.last}
         #Hostname
